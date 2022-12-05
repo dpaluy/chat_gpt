@@ -2,6 +2,8 @@
 
 This is OpenAI Chat GPT ruby wrapper (beta). Read more <https://beta.openai.com/docs/introduction>
 
+**NOTE** this code was written by ChatGPT and may not work
+
 ## Installation
 
 Install the gem and add to the application's Gemfile by executing:
