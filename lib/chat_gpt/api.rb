@@ -10,7 +10,7 @@ module ChatGpt
 
     attr_reader :connection
 
-    def initialize(params)
+    def initialize(params = {})
       @connection = ChatGpt::Client.new(params)
     end
 

@@ -24,6 +24,8 @@ end
 ```
 
 ```ruby
+require 'chat_gpt'
+
 # Create a new ChatGPT instance with your API key
 chat_gpt = ChatGpt::Api.new
 
