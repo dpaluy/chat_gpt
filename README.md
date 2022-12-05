@@ -1,6 +1,6 @@
 # Chat GPT
 
-This is OpenAI Chat GPT ruby wrapper
+This is OpenAI Chat GPT ruby wrapper. Read more <https://beta.openai.com/docs/introduction>
 
 ## Installation
 

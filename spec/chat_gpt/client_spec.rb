@@ -27,11 +27,14 @@ RSpec.describe ChatGpt::Client do
             "model" => "curie",
             "num_responses" => 1,
             "max_tokens" => 100,
-            "temperature" => 0.5
+            "temperature" => 0.5,
+            "conversation_id" => nil
           }.to_json,
           headers: {
             "Content-Type" => "application/json",
-            "Authorization" => "Bearer #{valid_key}"
+            "Authorization" => "Bearer #{valid_key}",
+            "Host" => "api.openai.com",
+            "User-Agent" => "Ruby"
           }
         )
         .to_return(
@@ -48,7 +51,7 @@ RSpec.describe ChatGpt::Client do
     it "should make a request to open api" do
       client = ChatGpt::Client.new(api_key: valid_key)
       response = client.send_message(prompt)
-      expect(response.status).to eq(200)
+      expect(response.body).to eq(success_response)
     end
   end
 end
