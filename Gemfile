@@ -9,7 +9,7 @@ group :development, :test do
   gem "rake", "~> 13.0"
   gem "rspec", "~> 3.0"
   gem "rubocop", "~> 1.39"
-  gem "ruby-lsp", "~> 0.3.6"
+  gem "ruby-lsp", "~> 0.3.7"
 end
 
 group :test do
